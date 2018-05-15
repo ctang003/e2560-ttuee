@@ -1,1 +1,6 @@
 請用 git clone https://github.com/ctang003/e2560-ttuee.git <目錄名稱> 來複製檔案
+
+新增 branch 的流程
+1. git branch 你的名稱(建議用學號)
+2. git checkout 你的名稱
+3. git push (會出現登入畫面)
