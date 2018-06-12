@@ -30,3 +30,4 @@ void loop() {
         Serial.println(analogRead(A0)); 
 
 }
+//analog to digital
