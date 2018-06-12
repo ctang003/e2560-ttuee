@@ -1,0 +1,17 @@
+void setup(){
+Serial.begin(9600);
+pinMode(A0,INPUT);
+for(int i=2;i<10;i++)
+{
+   pinMode(i,OUTPUT);
+}
+}
+void loop(){
+	for(int i=2;i<10;i++)
+	{
+		if(analogRead(A0)==i)
+		digitalWrite(i,HIGH);
+		else
+		digitalWrite(i,LOW);	
+	}
+}
