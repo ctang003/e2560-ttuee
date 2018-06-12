@@ -15,3 +15,5 @@ void loop(){
 		digitalWrite(i,LOW);	
 	}
 }
+
+//this is for max471 ADC
