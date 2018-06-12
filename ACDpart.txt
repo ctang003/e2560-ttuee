@@ -1,0 +1,28 @@
+int val;			//Arduino
+void setup() {
+  Serial.begin(9600);   
+  for(int i = 1;i <=10;i++){
+    pinMode(i,OUTPUT);
+  }
+}
+
+void loop() {
+  val=analogRead(A0);
+  String string0 = String(val,BIN);
+  Serial.println(string0);
+ int   ssize=string0.length();// find the size of the string0
+  Serial.println(ssize);
+  for(int i=1 ; i<=10;i++){
+    digitalWrite(i,LOW);// pin0 to  pin10 are low
+  }
+  for(int i=0;string0[i];i++){
+      if(string0[i] == '1'){
+          digitalWrite(11-ssize,HIGH);
+          ssize--;
+      }
+      if(string0[i] == '0'){
+          digitalWrite(11-ssize,LOW);  
+          ssize--;  
+      } 
+    }
+ }  
