@@ -111,7 +111,7 @@ while 1:
 	a1=round(y,3)*1000
 	a1=int(a1)
 	a2=a1/1000.0
-	print "The voltage value of battery: ",a2,"V"
+	print "The voltage value of battery is: ",a2,"V"
 	y1=a1/1000
 	y2=(a1%1000)/100
 	y3=(a1%100)/10
